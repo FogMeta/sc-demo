@@ -2,11 +2,11 @@ package main
 
 import (
 	"context"
-	"example/client"
 	"fmt"
 	"log"
 	"os"
 	"path"
+	"sc-demo/client"
 )
 
 func main() {
