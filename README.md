@@ -31,8 +31,12 @@ wget --no-check-certificate https://github.com/filswan/go-swan-client/releases/d
 ```
 
 
-6. 编译：
+## 6. build：
 ```
 go build
+```
+## 7. run：
+```
+./example
 ```
  
