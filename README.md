@@ -61,4 +61,5 @@ go build
 ```
 ./example
 ```
+## 8. The output log basically matches `test/out.log`.
  
