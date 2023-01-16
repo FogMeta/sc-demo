@@ -39,7 +39,7 @@ func main() {
 		MetaJsonPath: metaDataPath,
 		OutPutPath:   path.Join(outputPath, "deal"),
 		BidMode:      client.BidPrivate,
-		MinerIds:     "t02430",
+		MinerIds:     "t2430",
 		MaxCopy:      1,
 	})
 	if err != nil {
@@ -47,16 +47,16 @@ func main() {
 	}
 	fmt.Printf("SendDeal-->  minerIdAndDealCids: %+v", minerIdAndDealCids)
 
-	//println("=======auto deal =======")
-	//minerIds3, err := client.SendDeal(ctx, client.SendDealModel{
-	//	MetaJsonPath: metaDataPath,
-	//	OutPutPath:   path.Join(outputPath, "deal"),
-	//	BidMode:      client.BidAuto,
-	//	MaxCopy:      1,
-	//})
-	//if err != nil {
-	//	log.Fatalln(err)
-	//}
-	//fmt.Printf("SendDeal-->  minerIds: %+v", minerIds3)
+	println("=======auto deal =======")
+	minerIdAndDealCids2, err := client.SendDeal(ctx, client.SendDealModel{
+		MetaJsonPath: metaDataPath,
+		OutPutPath:   path.Join(outputPath, "deal"),
+		BidMode:      client.BidAuto,
+		MaxCopy:      1,
+	})
+	if err != nil {
+		log.Fatalln(err)
+	}
+	fmt.Printf("SendDeal-->  minerIdAndDealCids: %+v", minerIdAndDealCids2)
 
 }
