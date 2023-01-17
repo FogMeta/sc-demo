@@ -39,7 +39,7 @@ func main() {
 		MetaJsonPath: metaDataPath,
 		OutPutPath:   path.Join(outputPath, "deal"),
 		BidMode:      client.BidPrivate,
-		MinerIds:     "t2430",
+		MinerIds:     "f01955030",
 		MaxCopy:      1,
 	})
 	if err != nil {
