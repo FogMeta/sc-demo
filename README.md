@@ -124,7 +124,7 @@ The `swan-task-gd01n1-auto-deals.json` can be seen as follows:
  {
   "Uuid": "e7bdd2aa-c557-403e-810d-549da629c353",
   "SourceFileName": "sources",
-  "SourceFilePath": "/home/nbfs/long/sc-demo/test/sources",
+  "SourceFilePath": "/home/XXX/XXX/sc-demo/test/sources",
   "SourceFileMd5": "",
   "SourceFileSize": 224228,
   "CarFileName": "QmYqkd9ZKyUhP57wbLJTh4GHTmsXj64bedApEXLAABuBMj.car",
