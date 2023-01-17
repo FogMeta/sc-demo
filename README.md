@@ -164,7 +164,7 @@ swan-client generate-car graphsplit restore --input-dir=<CAR_file_path> --output
 
  - If you want to retrieve them from the Filecoin network, Lotus can help you:
 ```
-lotus client retrieve <PayloadCid> ~/output-file
+lotus client retrieve --provider=<miner_ID> <PayloadCid> ~/output-file
 ```
 
 Swan-client is developing a series of API, include `generate-car`, `upload to IPFS`, `send deals to storage providers`, `Retrieval and Restore`, and so on. please keep your eyes on the [here](https://github.com/filswan/go-swan-client)
