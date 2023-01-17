@@ -126,7 +126,7 @@ The `swan-task-gd01n1-auto-deals.json` can be seen as follows:
   "SourceFileMd5": "",
   "SourceFileSize": 224228,
   "CarFileName": "QmYqkd9ZKyUhP57wbLJTh4GHTmsXj64bedApEXLAABuBMj.car",
-  "CarFilePath": "/home/nbfs/long/sc-demo/test/car/QmYqkd9ZKyUhP57wbLJTh4GHTmsXj64bedApEXLAABuBMj.car",
+  "CarFilePath": "/home/XXX/XXX/test/car/QmYqkd9ZKyUhP57wbLJTh4GHTmsXj64bedApEXLAABuBMj.car",
   "CarFileMd5": "",
   "CarFileUrl": "http://ipfs1.storefrontiers.cn/ipfs/QmWfmpGWx2bXyfgnz8AMgH3HUkEKLoKtJ8bQhUjKYgPXQ7",
   "CarFileSize": 260096,
