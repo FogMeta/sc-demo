@@ -116,7 +116,7 @@ time="2023-01-17 01:33:16.814" level=info msg="auto send deal end,dealTotalCount
 SendDeal-->  minerIdAndDealCids: [{MinerId:f0717969 DealCid:bafyreieahpkremc7glrufpzijrhwgklam3hpmozk4mcaz2iayp7mdfjnva}]## 8. Retrieval and restore
 
 ```
-The `swan-task-gd01n1-auto-deals.json`
+The `swan-task-gd01n1-auto-deals.json` can be seen as follows:
 ```
 [
  {
