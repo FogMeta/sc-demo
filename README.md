@@ -13,7 +13,7 @@ lotus daemon --lite  >> daemon.log 2>&1 &
 ## 2. Create new wallet
 ```
 export LOTUS_PATH=/data/.lotus
-lotus wallet new
+lotus wallet new bls
 ```
 
 ## 3. Add funds to the wallets
@@ -67,7 +67,7 @@ The demo shows you a complete process, including the following functions:
  - Generate the CAR file from the source file, and get the path of the metadata file
  - Upload the CAR file to the IPFS gateway, and update metadata files (JSON and CSV), return the download link from IPFS gateway.
  - Send the task(deals) to the storage providers (including private tasks and auto-bid tasks) using the metadata file. After 24 hours, the files will be stored to the Filecoin network
-> Note: the test files are in the `./sc-demo/test/sources/`
+> **Note**: the test files are in the `./sc-demo/test/sources/`
 ```
 git clone https://github.com/FogMeta/sc-demo.git
 cd sc-demo/
