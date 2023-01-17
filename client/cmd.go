@@ -60,19 +60,30 @@ func ExecuteCmdAndLog(ctx context.Context, env []string, args []string) ([]Miner
 }
 
 func handleLog(data string) (MinerIdAndDealCid, error) {
-	var minerId, dealCid string
+	var miner, minerId, deal, dealCid string
 	if strings.Contains(data, "deal sent successfully") {
 		minerReg := regexp.MustCompile(`miner:[^\s]+`)
-		miner := minerReg.FindAllString(data, 1)
-		if len(miner) > 0 {
-			minerId = miner[0][6 : len(miner[0])-1]
+		minerStr := minerReg.FindAllString(data, 1)
+		if len(minerStr) > 0 {
+			miner = minerStr[0]
+			startIndex := strings.Index(miner, ":")
+			minerId = miner[startIndex+1 : len(miner)-1]
 		}
 
 		dealReg := regexp.MustCompile(`dealCID\|dealUuid:[^\s]+`)
-		deal := dealReg.FindAllString(data, 1)
-		if len(deal) > 0 {
-			dealCid = deal[0][17 : len(deal[0])-1]
+		dealStr := dealReg.FindAllString(data, 1)
+		if len(dealStr) > 0 {
+			deal = dealStr[0]
+		} else {
+			dealRegO := regexp.MustCompile(`CID:[^\s]+`)
+			dealStr0 := dealRegO.FindAllString(data, 1)
+			if len(dealStr0) > 0 {
+				deal = dealStr0[0]
+			}
 		}
+		startIndex := strings.Index(deal, ":")
+		dealCid = deal[startIndex+1 : len(deal)-1]
+
 		return MinerIdAndDealCid{
 			MinerId: minerId,
 			DealCid: dealCid,

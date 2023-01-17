@@ -1,4 +1,4 @@
-module example
+module sc-demo
 
 go 1.18
 
