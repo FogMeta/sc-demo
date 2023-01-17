@@ -68,7 +68,7 @@ The demo shows you a complete process, including the following functions:
  - Upload the CAR file to the IPFS gateway, and update metadata files (JSON and CSV), return the download link from IPFS gateway.
  - Send the task(deals) to the storage providers (including private tasks and auto-bid tasks) using the metadata file. After 24 hours, the 
 ```
-https://github.com/FogMeta/sc-demo.git
+git clone https://github.com/FogMeta/sc-demo.git
 cd sc-demo/
 ./sc-demo 
 ```
