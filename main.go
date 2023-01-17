@@ -45,7 +45,7 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	fmt.Printf("SendDeal-->  minerIdAndDealCids: %+v", minerIdAndDealCids)
+	fmt.Printf("SendDeal-->  minerIdAndDealCids: %+v \n", minerIdAndDealCids)
 
 	println("=======auto deal =======")
 	minerIdAndDealCids2, err := client.SendDeal(ctx, client.SendDealModel{
